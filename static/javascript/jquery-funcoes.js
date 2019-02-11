@@ -108,9 +108,8 @@ setInterval(function(){
       $('.quad').css({'background-color':'#31120ecc','transition-duration':'1000ms'});
       $('.quad4').css({'background-color':'#31120ecc','transition-duration':'1000ms'});
       $('#navbarTogglerDemo03').css({'background-color':'#31120ecc','transition-duration':'1000ms'});
-      $('.nav-link').css({'color':'#e27a17', 'transition-duration':'1000ms'});
-      $('a').css({'color':'#e27a17', 'transition-duration':'1000ms'});
-      $('h1.navbar-brand').css({'color':'#e27a17', 'transition-duration':'1000ms'});
+      $('a').css({'color':'#ff751a', 'transition-duration':'1000ms'});
+      $('h1.navbar-brand').css({'color':'#ff751a', 'transition-duration':'1000ms'});
       idx = -1;
     }
 

@@ -39,7 +39,7 @@ def login():
 
 @app.route('/cadastro')
 def cadastro():
-    return render_template('cadastro.html', titulo='LocaGeek - Cadastro')
+    return render_template('cadastro.html', titulo='LocaGeek - Cadastro', programas=programas)
 
 
 @app.route('/verificar-login', methods=['POST'])
@@ -56,6 +56,7 @@ def verificar_login():
             return redirect('/cadastro')
         else:
             return render_template('login.html', titulo='LocaGeek - login')
+
 
 
 app.run(debug=True)

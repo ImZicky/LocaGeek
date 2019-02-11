@@ -467,13 +467,24 @@ img#prod-img{
 }
 
 .news-3{
-  height: 500px;
+  min-height: 850px;
+  height: auto;
   background-image: url(../../static/images/products/photo-news4.png);
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 
 }
+
+.bg-transparente{
+	display: none;
+	height:  100%;
+	width: 100%;
+	position: absolute;
+	background: #110011dd;
+	z-index: 200;
+}
+
 
 .news-4{
   height: 500px;
