@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br" dir="ltr">
+<head>
+  {% include "head.html" %}
+  <title>{{ titulo }}</title>
+</head>
+
+<body>
+
+{% include "nav.html" %}
+
+  <div id="carrinho" class="container-fluid w-100 p-0">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div id="carrinho1" class="carousel-item active">
+          <div id="quad3-img1" class="quad3"></div>
+          <img class="car-img" src="/static/images/car/logo-roxa.png">
+          <img class="car-listra" src="/static/images/car/listra-h.png">
+          <h2 class="h-car">S.A.O.</h2>
+          <p class="car">They Still Awesome as always!</p>
+        </div>
+
+        <div id="carrinho2" class="carousel-item">
+          <div id="quad3-img2" class="quad3">
+          <img class="car-listra" src="/static/images/car/listra-h.png">
+          <img class="car-img" src="/static/images/car/logo-books.png">
+          <h2 class="h-car">Spider Verse</h2>
+          <p class="car">You must Watch this one!</p>
+          </div>
+        </div>
+
+        <div id="carrinho3" class="carousel-item">
+          <div id="quad3-img3" class="quad3"></div>
+          <img class="car-img" src="/static/images/car/logo-trofeu.png">
+          <img class="car-listra" src="/static/images/car/listra-h.png">
+          <h2 class="h-car">Logan</h2>
+          <p class="car">The real X-man</p>
+        </div>
+      </div>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <main class="container-fluid w-100">
+    <div class="row">
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+        <figure class="embed-responsive embed-responsive-16by9 rounded">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/KId6eunoiWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </figure>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+        <h5 class="nav-link">Crossing Field</h5>
+        <p>S.A.O. still great as always, and there's nothing better to celebrate this beautiful anime than consuming it or listen to this super cool video clip about the first and unforgettable opening!</p>
+        <p>Sword Art Online has received widespread commercial success, with the light novels having over 20 million copies sold worldwide. The anime series has received mixed to positive reviews, praised for its animation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKS -->
+  <div class="container-fluid escuro">
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-12 mt-2 mb-3">
+          <h5 class="nav-link">Produtos</h5>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12">
+            <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Descricao</th>
+                  <th scope="col">Produtora</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for programa in programas: %}
+                <tr>
+                  <td>img</td>
+                  <td>{{ programa.nome }}</td>
+                  <td>{{ programa.descricao }}</td>
+                  <td>{{ programa.produtora }}</td>
+                </tr>
+              {% endfor %}
+
+              </tbody>
+            </table>
+        </div>
+        <!--<div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-5">-->
+          <!--<figure class="books-img">-->
+            <!--<div class="zoom rounded">-->
+              <!--<img src="/static/images/products/bk5.png" class="rounded" alt="books">-->
+            <!--</div>-->
+            <!--<div class="zoom rounded">-->
+            <!--<img src="/static/images/products/bk6.png" class="rounded" alt="books">-->
+          <!--</div>-->
+          <!--<div class="zoom rounded">-->
+            <!--<img src="/static/images/products/bk10.png" class="rounded" alt="books">-->
+          <!--</div>-->
+          <!--<div class="zoom rounded">-->
+            <!--<img src="/static/images/products/bk9.png" class="rounded" alt="books">-->
+          <!--</div>-->
+          <!--</figure>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</main>
+
+  {% include "footer.html" %}
+  {% include "scripts.html" %}
+
+  </body>
+</html>
