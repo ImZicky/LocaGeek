@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9419b6d5-0103-4833-90db-1e65c83a3a7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/products/photo-news4.png" afterPath="$PROJECT_DIR$/static/images/products/photo-news4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/T_Gamer.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/T_Gamer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flask_controllers.py" afterPath="$PROJECT_DIR$/flask_controllers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/master.css" afterPath="$PROJECT_DIR$/static/css/master.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascript/jquery-funcoes.js" afterPath="$PROJECT_DIR$/static/javascript/jquery-funcoes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cadastro.html" afterPath="$PROJECT_DIR$/templates/cadastro.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,21 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flask_controllers.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flask_controllers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flask_controllers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="41" column="93" lean-forward="false" selection-start-line="41" selection-start-column="93" selection-end-line="41" selection-end-column="93" />
+            <state relative-caret-position="372">
+              <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cadastro.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cadastro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cadastro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="50" />
+            <state relative-caret-position="412">
+              <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
               <folding>
                 <element signature="e#1889#1896#1" expanded="true" />
               </folding>
@@ -130,11 +122,11 @@
         <option value="$PROJECT_DIR$/templates/scripts.html" />
         <option value="$PROJECT_DIR$/templates/template.html" />
         <option value="$PROJECT_DIR$/static/javascript/jquery-funcoes.js" />
-        <option value="$PROJECT_DIR$/flask_controllers.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/static/css/master.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/cadastro.html" />
+        <option value="$PROJECT_DIR$/flask_controllers.py" />
       </list>
     </option>
   </component>
@@ -282,6 +274,14 @@
       <option name="presentableId" value="Default" />
       <updated>1549561712600</updated>
     </task>
+    <task id="LOCAL-00001" summary="melhoria no front, criacao do necessario pra fazer o crud">
+      <created>1549909310795</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549909310795</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -293,7 +293,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.49100256" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22733612" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22733612" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -333,6 +333,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="melhoria no front, criacao do necessario pra fazer o crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="melhoria no front, criacao do necessario pra fazer o crud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -421,14 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_controllers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="41" column="93" lean-forward="false" selection-start-line="41" selection-start-column="93" selection-end-line="41" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/javascript/jquery-funcoes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -471,11 +467,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/cadastro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="50" />
+        <state relative-caret-position="412">
+          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
           <folding>
             <element signature="e#1889#1896#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_controllers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

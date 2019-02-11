@@ -42,6 +42,19 @@ def cadastro():
     return render_template('cadastro.html', titulo='LocaGeek - Cadastro', programas=programas)
 
 
+@app.route('/criar-produto', methods=["POST", ])
+def criar_programa():
+
+    nomeCad = request.form['nomeCad']
+    descricaoCad = request.form['descricaoCad']
+    produtoraCad = request.form['produtoraCad']
+
+    programa = Programa(nomeCad, descricaoCad, produtoraCad)
+
+    programas.append(programa)
+    return render_template('cadastro.html', titulo='LocaGeek - Cadastro', programas=programas)
+
+
 @app.route('/verificar-login', methods=['POST'])
 def verificar_login():
     #  CRIANDO ADMINISTRADOR
