@@ -6,7 +6,20 @@
 
     <main class="container-fluid news-3">
         <div class="container pt-5">
+            <!--pega mensagem se ouver no metodo flash do controler e alerta na view caso haja-->
         <div class="row pt-5">
+            <!--SÓ APARECE CASO HAJA MSG NO FLASH()-->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul id="messages" class="list-unstyled w-100">
+                        {% for message in messages: %}
+                            <li class="alert alert-success">{{message}}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
+
         <div class="col-12 mt-5 mb-5 escuro w-100 rounded">
           <h5 class="nav-link text-center">Produtos</h5>
         </div>

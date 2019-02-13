@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session, flash, jsonify
 
 app = Flask(__name__, static_url_path='/static')
-
+app.secret_key = 'lockadora'
 
 class Programa:
     def __init__(self, nome, descricao, produtora):
@@ -11,9 +11,10 @@ class Programa:
 
 
 class Administrador:
-    def __init__(self, email, senha):
+    def __init__(self, email, senha, nome):
         self.email = email
         self.senha = senha
+        self.nome = nome
 
 #  CRIANDO PROGRAMAS
 vingadores_guerra_infinita = Programa('Vingadores',
@@ -51,14 +52,18 @@ def criar_programa():
 
     programa = Programa(nomeCad, descricaoCad, produtoraCad)
 
+    td_certo = True
+
     programas.append(programa)
-    return render_template('cadastro.html', titulo='LocaGeek - Cadastro', programas=programas)
+
+    if td_certo:
+        return redirect('/cadastro')
 
 
 @app.route('/verificar-login', methods=['POST'])
 def verificar_login():
     #  CRIANDO ADMINISTRADOR
-    adm = Administrador('lucassimoessilva@hotmail.com', '123')
+    adm = Administrador('lucassimoessilva@hotmail.com', '123', 'Lucas')
     usuarios = [adm]
 
     email = request.form['email_usuario']
@@ -66,9 +71,12 @@ def verificar_login():
 
     for admin in usuarios:
         if admin.email == email and admin.senha == senha:
+            session['usuarioLogado'] = admin.__dict__  # SERIALIZA O OBJETO PARA POR NA SESSAO
+            flash(f'{admin.nome} logou com sucesso')  # POE UMA MSG NESSE METODO E RECUPERA COM O GET_FLASH NA VIEW
             return redirect('/cadastro')
         else:
-            return render_template('login.html', titulo='LocaGeek - login')
+            flash('verifique os campos e tente novamente...')
+            return redirect('/login')
 
 
 

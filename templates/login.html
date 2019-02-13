@@ -10,6 +10,16 @@
     <div class="row">
       <div class="container-fluid news-5">
       <form id="logar" action="/verificar-login" method="POST">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul id="messages" class="list-unstyled w-100">
+                        {% for message in messages: %}
+                            <li class="alert alert-danger">{{message}}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
         <div class="form-group">
           <label for="email_usuario">email</label>
           <input type="email" class="form-control mt-2" id="email_usuario" name="email_usuario" placeholder="Your email here">
